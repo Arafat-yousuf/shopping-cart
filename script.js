@@ -60,9 +60,6 @@ function updateTotal(){
    const tax = getSubTotal * 10 / 100 ;
    document.getElementById('tax').innerText =  tax;
    document.getElementById('total').innerText = getSubTotal + tax;
-   document.getElementById("invoice-subtotal").innerText = getSubTotal;
-   document.getElementById("invoice-tax").innerText = tax;
-   document.getElementById("invoice-total").innerText = getSubTotal + tax;
 
     // Remove Checkout Button When Total amount is 0(pore add korbo)
     if (getSubTotal == 0) {
